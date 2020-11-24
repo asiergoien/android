@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">AgendaPersonal</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="login">Log</string>
+    <string name="registrar">Registrar</string>
+    <string name="Contra_nueva">Contraseña nueva</string>
+    <string name="intro_contra">Introduce contraseña nueva</string>
+    <string name="repite_contra">Repite contraseña nueva</string>
+    <string name="nombre">Nombre  </string>
+    <string name="cancelar">Cancelar  </string>
+    <string name="Guardar">Guardar  </string>
+    <string name="Texto1">Bienvenido a su Agenda de tareas personal.\n ¿Que desea hacer?</string>
+    <string name="consultar_lis"> Consultar listado de tareas</string>
+    <string name="crear_tarea"> Crear nueva tarea</string>
+    <string name="Crear_Tarea_texto">Introduzca los datos de la tarea que desea crear </string>
+    <string name="Descripcion">Descripcion</string>
+    <string name="text_nombre_tarea">Nombre de la tarea</string>
+    <string name="text_descripcion_tarea">Descripcion de la tarea</string>
+    <string name="Text_fecha">Fecha</string>
+    <string name="Text_fecha_tarea">Ejemplo: 23/12/2020</string>
+    <string name="Coste">Coste</string>
+    <string name="Text_coste">Ejemplo: 20€</string>
+    <string name="Prioridad">Prioridad</string>
+    <string name="Tarea">Tarea realizada</string>
+    <string name="Text_tarea">ELIMINAR TAREA</string>
+    <string name="Salir">Salir</string>
+    <string name="Acerca_de">Acerca de ...</string>
+    <string name="Cambiar_contraseña">Cambiar contraseña</string>
+    <string name="Crear_nueva_tarea">Crear nueva tarea</string>
+    <string name="Text_contra_antigua">Contraseña antigua</string>
+    <string name="Text_contra_antigua_intro">Introduce la contraseña antigua</string>
+    <string-array name="priodidades">
+        <item>Urgente</item>
+        <item>Alta</item>
+        <item>Media</item>
+        <item>Baja</item>
+    </string-array>
+
+    <string name="TextAcercaDe">Esta aplicaicon es un proyecto que tenemos que entragar para la asignatura de \nProgramacion multimedia y dispositivos moviles.\n¿Merece esta aplicacion un 10?</string>
+    <string name="AcercaDe">Introduce la contraseña antigua</string>
+    <string name="si">merecidísimo</string>
+    <string name="no">Tu estas loco?Claro que no</string>
+    <string name="Gracias">Gracias ;)</string>
+    <string name="No_pasa_nada">Pues igual me tiro por la ventana</string>
+
+
+</resources>

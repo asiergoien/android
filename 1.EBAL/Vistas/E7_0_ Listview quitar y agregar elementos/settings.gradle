@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "E7_0_Listview agregar y quitar elementos"
