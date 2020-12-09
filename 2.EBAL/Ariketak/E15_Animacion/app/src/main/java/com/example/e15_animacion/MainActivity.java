@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         o_BalonDeArriba = findViewById(R.id.BalonDearriba_imageView);
         o_BalonDeAbajo = findViewById(R.id.BalonDeAbajoimageView);
         o_FormaAnimada = findViewById(R.id.formaAnimada_imageView);
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Aqui se les pone para ponerles animaciones
         o_BalonDeArriba.setOnClickListener(this::mover_2_Elementos);
-        o_BalonDeAbajo.setOnClickListener(this::mover_animacion);
+        o_BalonDeAbajo.setOnClickListener(this::mover_ValueAnimator);
         o_FormaAnimada.setOnClickListener(this::mover_formaAnimada);
         o_VectorAnimado.setOnClickListener(this::mover_vectorAnimado);
 
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         o_texto.startAnimation(animacion);
     }
     public void mover_ValueAnimator(View v) {
-        ConstraintLayout oConstraint = (ConstraintLayout) o_ImageView.getParent();
+        ConstraintLayout oConstraint = (ConstraintLayout) o_BalonDeAbajo.getParent();
         float fInicio = oConstraint.getLeft();
         float fFin = 600;
         ValueAnimator oValueAnimator = ValueAnimator.ofFloat(fInicio, fFin);
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         oValueAnimator.setInterpolator(new AccelerateInterpolator());
         oValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             public void onAnimationUpdate(ValueAnimator animation) {
-                o_ImageView.setTranslationX((float)animation.getAnimatedValue());
+                o_BalonDeAbajo.setTranslationX((float)animation.getAnimatedValue());
             }
         });
         oValueAnimator.start();
@@ -113,8 +114,7 @@ public class MainActivity extends AppCompatActivity {
         ((AnimationDrawable) o_FormaAnimada.getDrawable()).start();
     }
     public void mover_vectorAnimado(View v) {
-        ((AnimatedVectorDrawable)
-                o_VectorAnimado.getDrawable()).start();
+        ((AnimatedVectorDrawable) o_VectorAnimado.getDrawable()).start();
     }
 
 
